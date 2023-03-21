@@ -63,14 +63,14 @@ $ ./run_docker.sh
 ### ビルド
 
 ```
-$ ./build.sh
+> ./build.sh
 ```
 
 ### 実行
 
 ```
-$ cd build
-$ ./openvino_inference
+> cd build
+> ./openvino_inference
 ```
 
 
