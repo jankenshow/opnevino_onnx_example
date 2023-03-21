@@ -75,6 +75,7 @@ $ ./openvino_inference
 
 # その他
 
+- torchからonnxへの変換に関する[docs](https://pytorch.org/docs/stable/onnx.html)  
 - OpenVINOでdynamic shapeのonnxモデルを推論する場合は、`InferenceEngine`ではなく`ov::Core:compile_model API`を利用する。  
 - OpenVINOをローカル環境にインストールする際は[こちら](https://docs.openvino.ai/latest/openvino_docs_install_guides_overview.html)  
 - onnxrunime for c++のインストール方法は[こちら](https://onnxruntime.ai)  
