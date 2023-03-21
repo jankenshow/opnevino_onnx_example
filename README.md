@@ -56,7 +56,8 @@ $ python convert2onnx.py
 ```
 $ docker pull openvino/ubuntu20_dev
 $ ./run_docker.sh
-$ cd /workspace
+> /opt/intel/openvino_2022.3.0.9038/setupvars.sh
+> cd /workspace
 ```
 
 ### ビルド
