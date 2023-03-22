@@ -28,7 +28,7 @@ onnx のインストールは下記コマンドで実行
 $ pip install onnx onnxruntime
 ```
 
-## onnxのファイルを読み込んで、C++推論を行う環境
+## onnxのファイルを読み込んで、OpenVINO(C++)で推論を行う環境
 
 docker container 内でビルド・実行する。  
 利用するイメージは[こちら](https://hub.docker.com/r/openvino/ubuntu20_dev)  
