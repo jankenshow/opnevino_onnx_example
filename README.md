@@ -13,7 +13,7 @@
 
 # 実行環境
 
-## pytorchのモデルをonnxに変換
+## pytorchのモデルをonnxに変換する環境
 
 お好きなpython環境でもできるはず。  
 
@@ -28,7 +28,7 @@ onnx のインストールは下記コマンドで実行
 $ pip install onnx onnxruntime
 ```
 
-## onnxのファイルを読み込んで、C++推論を行う
+## onnxのファイルを読み込んで、C++推論を行う環境
 
 docker container 内でビルド・実行する。  
 利用するイメージは[こちら](https://hub.docker.com/r/openvino/ubuntu20_dev)  
@@ -53,9 +53,17 @@ $ python convert2onnx.py
 
 ### 環境作成
 
+- dockerの起動  
+
 ```
 $ docker pull openvino/ubuntu20_dev
 $ ./run_docker.sh
+```
+
+- 環境変数の設定など  
+
+```
+# docker container内
 > /opt/intel/openvino_2022.3.0.9038/setupvars.sh
 > cd /workspace
 ```
@@ -63,12 +71,14 @@ $ ./run_docker.sh
 ### ビルド
 
 ```
+# docker container内
 > ./build.sh
 ```
 
 ### 実行
 
 ```
+# docker container内
 > cd build
 > ./openvino_inference
 ```
